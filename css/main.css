@@ -13,12 +13,27 @@ a:hover {
     text-decoration: underline;
     color: black;
 }
-a:visited{
-    
-}
 .textAligncenter {
     text-align: center;
 }
+.wid {
+    width: calc(100% / 3 - 4px);
+}
+.margin {
+    margin:5px 2px;
+}
+.dispNone {display: none;
+}
+.pad {
+    padding:3px;
+}
+.marginTop {
+    margin-top: 2px;
+}
+.grey {
+    color: gray;
+} 
+
 /* REGOLE FLEX */
 .flex {
     display: flex;
@@ -35,11 +50,11 @@ a:visited{
 .jtfcontSpacearound {
     justify-content: space-around;
 }
+.wrap {flex-wrap: wrap;}
 /* HEADER CSS */
 .navbar {
-    height:60px;
     width: 100%;
-    position:fixed;
+    position: fixed;
 }
 .bgOrange   {
     background-color: #ff6900;
@@ -57,8 +72,15 @@ a:visited{
     margin: 0 3px;
 }
 #icons .fa-solid:hover {
-    color:black ;
+    color:black;
 }
 /* MAIN CSS */
+.containerProducts {
+    width: 80%;
+    margin: 0 auto;
+}
+.containerProducts img{
+    width: 100%; 
+}
 
 /* FOOTER CSS */
