@@ -17,15 +17,12 @@ a:hover {
     text-align: center;
 }
 .wid {
-    width: calc(100% / 3 - 4px);
+    width: calc(100% / 3 - 6px);
 }
 .margin {
-    margin:5px 2px;
+    margin:0 3px;
 }
 .dispNone {display: none;
-}
-.pad {
-    padding:3px;
 }
 .marginTop {
     margin-top: 2px;
@@ -52,7 +49,21 @@ a:hover {
 .jtfcontSpacearound {
     justify-content: space-around;
 }
-.wrap {flex-wrap: wrap;}
+.alignitemflexStart {
+    align-items: flex-start;
+}
+.alignitemflexEnd {
+    align-items: flex-end;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.column {
+    flex-direction: column;
+}
+jstcontentflexEnd {
+    justify-content: flex-end;
+}
 /* HEADER CSS */
 header {
     height: 60px;
@@ -60,6 +71,8 @@ header {
 .navbar {
     width: 100%;
     position: fixed;
+    z-index: 999;
+
 }
 .bgOrange   {
     background-color: #ff6900;
@@ -89,11 +102,87 @@ main {
 }
 .containerProducts .fa-solid {
     position: absolute;
-    top: 10px;
-    right: 3px;
+    top: 25px;
+    right: 0px;
+    background-color: white;
+    padding: 5px;
+    
+}
+
+.containerProducts .fa-solid:hover {
+    color: red;
 }
 .containerProducts img{
     width: 100%; 
 }
+.discount {
+    background-color: red;
+    padding: 5px;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    left:3px;
+    font-size: 12px ;
+}
+.attribute {
+    background-color: green;
+    position: absolute;
+    padding: 5px 10px;
+    bottom: 100px;
+    left:45px;
+    color: white;
+    font-size: 12px;
+}
+#attributeTwo {
+    background-color: green;
+    position: absolute;
+    padding: 5px 10px;
+    bottom: 100px;
+    left:3px;
+    color: white;
+    font-size: 12px;
+}
+.alternative {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.pic:hover .alternative,.discount,.attribute,#attributeTwo,.images .fa-solid {
+    z-index:2;
+} 
 
 /* FOOTER CSS */
+
+.bgBlack{
+    background-color: black;
+}
+.cWhite {
+    color: white;
+}
+.credits {
+    margin-top: 20px;
+    width: 80%;
+    padding:20px;
+}
+.creditsLeft {
+    width: 50%;
+}
+.creditsRight {
+    width: 50%;
+}
+    
+h3,p {
+    margin:5px 0;
+}
+.creditsRight h3{
+    font-size: 14px;
+    font-weight: 600;
+}  
+.iconsFooter {
+    margin-right:3px;
+}
+.iconsFooter .fa-brands {
+    margin:5px 0 0 2px;
+}
