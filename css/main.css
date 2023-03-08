@@ -17,10 +17,10 @@ a:hover {
     text-align: center;
 }
 .wid {
-    width: calc(100% / 3 - 6px);
+    width: calc(100% / 3 - 26px);
 }
 .margin {
-    margin:0 3px;
+    margin:10px 3px;
 }
 .dispNone {display: none;
 }
@@ -32,6 +32,14 @@ a:hover {
 } 
 .relative {
     position: relative;
+}
+.red {
+    color: red;
+    font-weight: 600;
+    margin-right:5px;
+}
+.crossline {
+    text-decoration: line-through;
 }
 /* REGOLE FLEX */
 .flex {
