@@ -33,7 +33,9 @@ a:hover {
 .grey {
     color: gray;
 } 
-
+.relative {
+    position: relative;
+}
 /* REGOLE FLEX */
 .flex {
     display: flex;
@@ -52,6 +54,9 @@ a:hover {
 }
 .wrap {flex-wrap: wrap;}
 /* HEADER CSS */
+header {
+    height: 60px;
+}
 .navbar {
     width: 100%;
     position: fixed;
@@ -75,9 +80,17 @@ a:hover {
     color:black;
 }
 /* MAIN CSS */
+main {
+    margin-top: 60px;
+}
 .containerProducts {
     width: 80%;
     margin: 0 auto;
+}
+.containerProducts .fa-solid {
+    position: absolute;
+    top: 10px;
+    right: 3px;
 }
 .containerProducts img{
     width: 100%; 
